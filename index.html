@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        /*1. Задать температуру в градусах по Цельсию. Вывести в alert соответствующую температуру в
+        градусах по Фаренгейту. Подсказка: расчет идет по формуле Tf = (9 / 5) * Tc + 32, где Tf —
+        температура по Фаренгейту, Tc — по Цельсию.*/
+        var Tc=30;
+        var Tf=ToFahrenheitConvert(Tc);
+
+        alert(Tf);
+
+        function ToFahrenheitConvert (celsius){return (9 / 5) * celsius + 32;}
+
+        /*2. Объявить две переменные: admin и name. Записать в name строку "Василий"; Скопировать
+        значение из name в admin. Вывести admin (должно вывестись «Василий»).*/
+        let name="Василий";
+        let admin=name;
+        alert(admin);
+    </script>
+</body>
+</html>
